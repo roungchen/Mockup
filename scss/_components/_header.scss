@@ -1,0 +1,148 @@
+.lang {
+	@include position(fixed,$top:0,$left:0,$index:9999);
+	display:none;
+	background-color: getPrimaryColor('grey');
+	color:white;
+	font-size:14px;
+	width:100%;
+	height:100vh;
+	.icon-en {
+		@include background($img:'icon-en.svg',$repeat:no-repeat,$size:contain);
+		padding-left:30px;
+	}
+
+	input {
+		height:30px;
+		border:0;
+		background-color: getPrimaryColor('light-grey');
+		width: calc(100% - 24px);
+		color: getPrimaryColor('black')!important;
+		padding:0 5px;
+		@include respond-to('lg') {
+			width:275px;
+		}
+	}
+
+	.icon-close {
+		color:white;
+		font-size:18px;
+		display:block;
+		float:right;
+		padding:10px;
+		cursor:pointer;
+		&:after {
+			display:table;
+			content:" ";
+			clear:both;
+		}
+		@include respond-to('lg') {
+			display:none;
+		}
+	}
+
+	.search {
+		width:100%;
+		margin-left:32px;
+		margin-right:15px;
+		display:inline-block;
+		padding:0 10px;
+		background-color: getPrimaryColor('light-grey');
+		height:30px;
+		line-height:30px;
+		color: getPrimaryColor('black')!important;
+		@include respond-to('lg') {
+			margin-left:30px;
+			margin-right:0;
+			width:auto;
+		}
+	}
+	ul {
+		margin-top:20px;
+		padding:0;
+		width:100%;
+		li {
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:32px;
+			padding-right:15px;			
+			border-bottom:1px solid black;
+		}
+	}
+
+	@include respond-to('lg') {
+		@include position(relative,$top:auto,$left:auto);
+		display:block;
+		height:30px;
+		line-height:30px;
+
+		ul {
+			display:none;
+		}
+	}
+
+
+}
+.head {
+	position:relative;
+	height:70px;
+	.logo {
+		width:60%;
+		vertical-align: middle;
+		display:inline-block;
+		@include respond-to('sm') {
+			width:324px;
+		}
+	}
+	ul {
+		display:none;
+		li {
+			float:left;
+			padding:0 10px;
+		}
+		@include respond-to('lg') {
+			display:inline-block;
+		}
+	}
+
+	@include respond-to('lg') {
+		height:84px;
+	}
+	.icon-menu {
+		@include position (absolute,$top:50%,$left:10px);
+		@include transform('translateY(-50%)');
+
+		@include respond-to('lg') {
+			display:none;
+		}
+	}
+}
+.breadcrumb {
+	@include background ($img:'breadcrumb-bg.png');
+	display:none;
+	border-radius: 0;
+	height:40px;
+	margin-bottom:0;
+	a {
+		&:first-of-type {
+			padding-left:15px;
+		}
+		&:not(:last-of-type):after {
+			content:"|";
+			padding:0 5px;
+		}
+	}
+	@include respond-to('lg') {
+		display:block;
+	}
+}
+
+.banner {
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	vertical-align: middle;
+	display:block;
+	@include respond-to('xxl') {
+		width:1400px;
+	}
+}

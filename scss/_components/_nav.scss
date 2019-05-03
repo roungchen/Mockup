@@ -1,0 +1,57 @@
+nav {
+	@include position(fixed,$top:0,$left:0,$index:100);
+	@include font ('Futura-Bold',$size:14px);
+	width:100%;
+	.logo {
+		@include position(absolute,$top:20px,$left:4.5%,$index:5);
+		width:90px;
+	}
+
+	.nav {
+		&-left,
+		&-right {
+			position:absolute;
+			top:0;
+		}
+		&-left {
+			left:0;
+			z-index:3;
+			width:32.62%;
+		}
+		&-right {
+			right:0;
+			width:71.47%;
+		}
+	}
+
+	ul {
+		@include position(relative,$index:2);
+		padding-left:29%;
+		padding-top:3%;
+		li {
+			float:left;
+			color:white;
+			&:last-of-type {
+				padding-right:0;
+			}
+			a {
+				color:inherit;
+				padding:4px 15px;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				@include desktop-hover {
+					background-color:getPrimaryColor('blue');
+					text-decoration: none;
+					color:inherit;
+				}
+			}
+			&:first-of-type {
+				a {
+					padding-left:50px;
+				}
+			}
+		}
+	}
+}
+

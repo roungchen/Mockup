@@ -1,0 +1,20 @@
+.copyright {
+	background-color: getPrimaryColor('dark-grey');
+	color:white;
+	line-height:1.3em;
+	a {
+		display:block;
+		font-size:14px;
+	}
+	.container {
+		padding-top:30px;
+		padding-bottom:80px;
+	}
+	.skytrax {
+		width:80px;
+		height:auto;
+	}
+	.star-alliance {
+		width:90%;
+	}
+}

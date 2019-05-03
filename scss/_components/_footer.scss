@@ -1,0 +1,34 @@
+.footer {
+	background-color: getPrimaryColor('grey');
+	color:white;
+	line-height:1.3em;
+
+
+	.social-media {
+		position:relative;
+		display:table;
+		padding-top:20px;
+		padding-right:30px;
+		color: getPrimaryColor('brown');
+		font-size:18px;
+		.ext-link-icon {
+			@include position(absolute,$bottom:0,$right:0);
+		}
+		@include respond-to ('lg') {
+			font-size:24px;
+		}
+	}
+	h2 {
+		font-size:18px;
+	}
+
+	a {
+		display:block;
+		font-size:14px;
+	}
+
+	.container {
+		padding-top:30px;
+		padding-bottom:20px;
+	}	
+}

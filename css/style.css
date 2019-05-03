@@ -1,0 +1,488 @@
+/*! SCSS Generated */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_abstracts\/_placeholder\.scss}line{font-family:\000031}}
+.box-form input[type="reset"], .box-form input[type="submit"] {
+  border: 1px solid #d8292f;
+  color: #d8292f;
+  padding: 5px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000315}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000318}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000321}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000324}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000328}}
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000333}}
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_reset\.scss}line{font-family:\0000337}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot") format("eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg#icomoon") format("svg"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_common\.scss}line{font-family:\000034}}
+html {
+  font-family: "Open Sans"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_common\.scss}line{font-family:\000039}}
+body {
+  background-color: #fafafa; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_common\.scss}line{font-family:\0000313}}
+strong {
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_common\.scss}line{font-family:\0000318}}
+.ext-link-icon:before {
+  font-family: icomoon;
+  content: "\e900"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_base\/_common\.scss}line{font-family:\0000324}}
+.feed-back {
+  position: fixed;
+  top: 75%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/site-feedback.png");
+  width: 40px;
+  height: 130px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\000031}}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-family: "Futura-Bold";
+  font-size: 14px;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\000035}}
+  nav .logo {
+    position: absolute;
+    top: 20px;
+    left: 4.5%;
+    z-index: 5;
+    width: 90px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000311}}
+  nav .nav-left, nav .nav-right {
+    position: absolute;
+    top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000316}}
+  nav .nav-left {
+    left: 0;
+    z-index: 3;
+    width: 32.62%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000321}}
+  nav .nav-right {
+    right: 0;
+    width: 71.47%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000327}}
+  nav ul {
+    position: relative;
+    z-index: 2;
+    padding-left: 29%;
+    padding-top: 3%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000331}}
+    nav ul li {
+      float: left;
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000334}}
+      nav ul li:last-of-type {
+        padding-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000337}}
+      nav ul li a {
+        color: inherit;
+        padding: 4px 15px;
+        text-transform: uppercase;
+        text-decoration: none; }
+        @media (hover: hover) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_abstracts\/_mixins\.scss}line{font-family:\0000370}}
+          nav ul li a:hover {
+            text-decoration: none;
+            color: inherit; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_nav\.scss}line{font-family:\0000350}}
+      nav ul li:first-of-type a {
+        padding-left: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\000031}}
+.box-form {
+  border: 1px solid #e6e6e6;
+  background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\000034}}
+  .box-form label {
+    display: block;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000311}}
+  .box-form h2 {
+    font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000315}}
+  .box-form fieldset {
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000319}}
+  .box-form span {
+    display: inline-block;
+    padding-bottom: 5px;
+    white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000324}}
+    .box-form span:not(:last-of-type) {
+      padding-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000329}}
+  .box-form select {
+    width: 100%;
+    border: 0;
+    background-color: #e6e6e6;
+    border-radius: 0;
+    height: 30px;
+    font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000336}}
+    .box-form select:focus {
+      outline: none !important;
+      border: 1px solid black;
+      background: white;
+      box-shadow: 0 0 10px black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000342}}
+    .box-form select.ng-invalid.ng-touched {
+      border: 1px solid #d8292f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000345}}
+    .box-form select.ng-valid.ng-touched {
+      border: 1px solid #509D12; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000351}}
+  .box-form input[type="text"], .box-form input[type="email"], .box-form input[type="tel"] {
+    background-color: #e6e6e6;
+    border: 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000359}}
+    .box-form input[type="text"]:focus, .box-form input[type="email"]:focus, .box-form input[type="tel"]:focus {
+      outline: none !important;
+      border: 1px solid black;
+      background: white;
+      box-shadow: 0 0 10px black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000367}}
+  .box-form input[type="checkbox"] {
+    border: 2px solid #e6e6e6;
+    border-radius: 0;
+    padding-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000372}}
+  .box-form input[type="reset"] {
+    float: left;
+    border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000377}}
+  .box-form input[type="submit"] {
+    background-color: #d8292f;
+    color: white;
+    float: right;
+    border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000383}}
+    .box-form input[type="submit"]:focus {
+      outline: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000387}}
+  .box-form input.ng-invalid.ng-touched {
+    border: 1px solid #d8292f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000390}}
+  .box-form input.ng-valid.ng-touched {
+    border: 1px solid #509D12; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\0000395}}
+  .box-form textarea {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 160px;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003102}}
+    .box-form textarea:focus {
+      outline: none !important;
+      border: 1px solid black;
+      background: white;
+      box-shadow: 0 0 10px black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003110}}
+  .box-form p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003116}}
+  .box-form ul {
+    padding-bottom: 5px;
+    column-count: 1;
+    list-style-type: square;
+    margin-left: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003121}}
+    .box-form ul li {
+      padding: 3px 0px;
+      font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003124}}
+      .box-form ul li em {
+        font-style: italic; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003116}}
+      .box-form ul {
+        column-count: 2; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_form\.scss}line{font-family:\00003133}}
+  .box-form .ng-invalid .btn {
+    background: gray;
+    border: 1px solid gray; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\000031}}
+.lang {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  background-color: #4a4f55;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  height: 100vh; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\000039}}
+  .lang .icon-en {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/icon-en.svg");
+    padding-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000314}}
+  .lang input {
+    height: 30px;
+    border: 0;
+    background-color: #c8c8c8;
+    width: calc(100% - 24px);
+    color: #2A2A2A !important;
+    padding: 0 5px; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000314}}
+      .lang input {
+        width: 275px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000326}}
+  .lang .icon-close {
+    color: white;
+    font-size: 18px;
+    display: block;
+    float: right;
+    padding: 10px;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000333}}
+    .lang .icon-close:after {
+      display: table;
+      content: " ";
+      clear: both; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000326}}
+      .lang .icon-close {
+        display: none; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000343}}
+  .lang .search {
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 15px;
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #c8c8c8;
+    height: 30px;
+    line-height: 30px;
+    color: #2A2A2A !important; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000343}}
+      .lang .search {
+        margin-left: 30px;
+        margin-right: 0;
+        width: auto; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000359}}
+  .lang ul {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000363}}
+    .lang ul li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 32px;
+      padding-right: 15px;
+      border-bottom: 1px solid black; }
+  @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\000031}}
+    .lang {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: block;
+      height: 30px;
+      line-height: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000378}}
+      .lang ul {
+        display: none; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000385}}
+.head {
+  position: relative;
+  height: 70px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000388}}
+  .head .logo {
+    width: 60%;
+    vertical-align: middle;
+    display: inline-block; }
+    @media (min-width: 576px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000388}}
+      .head .logo {
+        width: 324px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000396}}
+  .head ul {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000398}}
+    .head ul li {
+      float: left;
+      padding: 0 10px; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000396}}
+      .head ul {
+        display: inline-block; } }
+  @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\0000385}}
+    .head {
+      height: 84px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003110}}
+  .head .icon-menu {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003110}}
+      .head .icon-menu {
+        display: none; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003119}}
+.breadcrumb {
+  background-image: url("../img/breadcrumb-bg.png");
+  display: none;
+  border-radius: 0;
+  height: 40px;
+  margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003126}}
+  .breadcrumb a:first-of-type {
+    padding-left: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003129}}
+  .breadcrumb a:not(:last-of-type):after {
+    content: "|";
+    padding: 0 5px; }
+  @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003119}}
+    .breadcrumb {
+      display: block; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003139}}
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: block; }
+  @media (min-width: 1440px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_header\.scss}line{font-family:\00003139}}
+    .banner {
+      width: 1400px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\000031}}
+.footer {
+  background-color: #4a4f55;
+  color: white;
+  line-height: 1.3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\000037}}
+  .footer .social-media {
+    position: relative;
+    display: table;
+    padding-top: 20px;
+    padding-right: 30px;
+    color: #BAA88D;
+    font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\0000314}}
+    .footer .social-media .ext-link-icon {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\000037}}
+      .footer .social-media {
+        font-size: 24px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\0000321}}
+  .footer h2 {
+    font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\0000325}}
+  .footer a {
+    display: block;
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_footer\.scss}line{font-family:\0000330}}
+  .footer .container {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copyright\.scss}line{font-family:\000031}}
+.copyright {
+  background-color: #2a2a2a;
+  color: white;
+  line-height: 1.3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copyright\.scss}line{font-family:\000035}}
+  .copyright a {
+    display: block;
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copyright\.scss}line{font-family:\000039}}
+  .copyright .container {
+    padding-top: 30px;
+    padding-bottom: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copyright\.scss}line{font-family:\0000313}}
+  .copyright .skytrax {
+    width: 80px;
+    height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copyright\.scss}line{font-family:\0000317}}
+  .copyright .star-alliance {
+    width: 90%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copy\.scss}line{font-family:\000032}}
+.copy h1 {
+  font-size: 20px;
+  padding-top: 20px; }
+  @media (min-width: 576px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Backup\/Mockup\%20Test\/version\%201\.0\/scss\/_components\/_copy\.scss}line{font-family:\000032}}
+    .copy h1 {
+      font-size: 36px; } }
+
+/*# sourceMappingURL=style.css.map */

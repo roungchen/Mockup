@@ -1,0 +1,29 @@
+// Font Family
+@include font-face(icomoon,normal,normal,eot woff svg);
+
+html {
+	font-family: $font_face;
+
+}
+
+body {
+	background-color: #fafafa;
+}
+
+strong {
+	font-weight:normal;
+}
+
+.ext-link-icon {
+	&:before {
+		font-family:icomoon;
+		content: "\e900";
+	}
+}
+
+.feed-back {
+	@include position (fixed,$top:75%,$right:0);
+	@include background ($img:'site-feedback.png',$repeat:no-repeat,$size: contain);
+	width:40px;
+	height:130px;
+}

@@ -1,0 +1,33 @@
+$path: '../';
+$img_path: '#{$path}img/';
+
+$font_path: '#{$path}fonts/';
+
+// Colors
+$primary-colours: (
+	'black': (#2A2A2A),
+	'brown': (#BAA88D),
+	'grey': (#4a4f55),
+	'dark-grey':(#2a2a2a),
+	'light-grey':(#c8c8c8),
+	'lighter-grey': (#e6e6e6),
+	'red': (#d8292f),
+	'green': (#509D12)
+);
+
+$font_face: 'Open Sans';
+
+// Break Points
+$breakpoints: (
+	'xxs': (min-width: 320px),
+	'xs': (min-width: 375px),
+	'sm': (min-width: 576px),
+	'md': (min-width: 768px),
+	'lg': (min-width: 992px),
+	'xl': (min-width: 1200px),
+	'xxl': (min-width: 1440px),
+	'xxxl': (min-width: 1600px)
+);
+
+
+
