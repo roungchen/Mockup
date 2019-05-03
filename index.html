@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title></title>
+		 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		 <script type="text/javascript" src="js/formApp.js"></script>
+	</head>
+	<body   ng-app="formApp">
+		<div class="lang">
+			<div class="container">
+				<div class="row d-flex justify-content-lg-end align-items-center">
+					<a class="icon-close"><i class="fas fa-times"></i></a>
+					<div><a class="icon-en">English <i class="fas fa-chevron-down"></i></a></div>
+					<div class="search"><input type="text" placeholder="FIND"><a class="btn-search"><i class="fas fa-search"></i></a></div>
+					<ul>
+						<li><a>Book</a></li>
+						<li><a>Investor Relations</a></li>
+						<li><a>Corporate Responsibility</a></li>
+						<li><a>Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head d-flex align-items-center">
+			<div class="container">
+				<div class="row justify-content-center justify-content-lg-between align-items-center">
+					<a class="icon-menu"><i class="fas fa-bars"></i></a>
+					<img src="img/logo.svg" class="logo">
+
+					<ul>
+						<li><a>Book</a></li>
+						<li><a>Investor Relations</a></li>
+						<li><a>Corporate Responsibility</a></li>
+						<li><a>Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumb">
+			<div class="container">
+				<a>Home</a>
+				<a>Media Centre</a>
+				<a>Brand Permissions</a> 
+				<i class="fas fa-chevron-up"></i>
+			</div>
+		</div>
+		<img src="img/banner.jpg" class="d-none d-sm-block banner">
+		<img src="img/banner-small.jpg" class="d-block d-sm-none banner">
+
+		<div class="copy container">
+			<h1>Air Canada Rights and Brand Permissions</h1>
+		</div>
+		<div class="box-form container mt-3 mb-3 p-3" ng-controller="RegistrationController as requestForm">
+			<form name="requestForm"
+			novalidate>
+			<div class="row">
+				<div class="col"><h2>Request for permission</h2></div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-3">
+					<fieldset>
+						<label for="title">TITLE</label>
+						<select
+						ng-model="title"
+						ng-change="selectTitle()"
+						ng-required="true"
+						>
+							<option value="">TITLE</option>
+							<option ng-repeat="option in title_list" value="{{option}}">{{option}}</option>
+						</select>
+						
+					</fieldset>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<fieldset>
+						<label for="first_time">FIRST NAME</label>
+						<input type="text" name="firstname" 
+						placeholder="FIRST NAME"
+						ng-model="firstname"
+        				ng-required="true">
+					<fieldset>
+				</div>
+				<div class="col-12 col-md-6">
+					<fieldset>
+						<label for="last_name">LAST NAME</label>
+						<input type="text" name="lastname" 
+						placeholder="LAST NAME"
+						ng-model="lastname"
+        				ng-required="true">
+					</fieldset>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<fieldset>
+						<label for="company">COMPANY *OPTIONAL</label>
+						<input type="text" name="company" placeholder="COMPANY">
+					</fieldset>
+				</div>
+				<div class="col-12 col-md-4">
+					<fieldset>
+						<label for="phone">PHONE NUMBER</label>
+						<input type="tel" name="phone" 
+						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+						placeholder="PHONE NUMBER"
+						ng-model="phone"
+        				ng-required="true">
+					</fieldset>
+				</div>
+				<div class="col-12 col-md-4">
+					<fieldset>
+						<label for="email">EMAIL ADDRESS</label>
+						<input type="email" name="email" 
+						placeholder="EMAIL ADDRESS"
+						ng-model="email"
+        				ng-required="true">
+					</fieldset>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<fieldset>
+						<label for="media_type"><h2>Media Type</h2></label>
+						<br>
+						<span><input type="checkbox" 
+							ng-model="checkboxMediaType.logo"
+							ng-required="!(checkboxMediaType.logo || checkboxMediaType.photo || checkboxMediaType.advertising || checkboxMediaType.other)"> LOGO</span>
+						<span><input type="checkbox" 
+							ng-model="checkboxMediaType.photo"
+							ng-required="!(checkboxMediaType.logo || checkboxMediaType.photo || checkboxMediaType.advertising || checkboxMediaType.other)"> PHOTO</span>
+						<span><input type="checkbox" 
+							ng-model="checkboxMediaType.advertising"
+							ng-required="!(checkboxMediaType.logo || checkboxMediaType.photo || checkboxMediaType.advertising || checkboxMediaType.other)"> ADVERTISING</span>
+						<span><input type="checkbox" 
+							ng-model="checkboxMediaType.other"
+							ng-required="!(checkboxMediaType.logo || checkboxMediaType.photo || checkboxMediaType.advertising || checkboxMediaType.other)"> OTHER</span>
+					</fieldset>
+
+					<p>DESCRIBE YOUR REQUEST OR QUESTION, PLEASE INCLUDE THE FOLLOWING IN YOUR REQUEST:</p>
+
+					<ul>
+						<li>Specific image(s) or material for which you are seeking permission</li>
+						<li>Publisher, <em>if applicable</em></li>
+						<li>Title, <em>if applicable</em></li>
+						<li>Deadline</li>
+						<li>Surrounding copy or text to the Air Canada material you wish to use in your project</li>
+						<li>Publishing date and countries, <em>if applicable</em></li>
+						<li>How Air Canada will be featured (visual or text)</li>
+					</ul>
+
+					<textarea name="descr"
+					ng-model="descr"
+					ng-required="true"
+					></textarea>
+
+					<input type="reset" value="CLEAR">
+					<input type="submit" ng-disabled="requestForm.$invalid" class="btn" value="SUBMIT">
+				</div>
+			</div>
+			</form>
+		</div>
+		
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class=" col-md-4 col-12">
+						<h2>ABOUT</h2>
+						<a>Corporate Profile</a>
+						<a>Corporate Governance</a>
+						<a>Media Centre</a>
+						<a>Our Fleet Opens in a New Window</a>
+						<a>Safety</a>
+						<a>Investor Relations</a>
+						<a>Suppliers</a>
+					</div>
+					<div class="col-md-4 col-12">
+						<h2 class="pt-3 pt-md-0">CORPORATE RESPONSIBILITY</h2>
+						<a>Air Canada Foundation</a>
+						<a>In the Community</a>
+						<a>Commercial Sponsorship</a>
+						<a>LeaveLess <i class="ext-link-icon"></i></a>
+						<a>Corporate Sustainability Reports</a>
+						<a>Modern Slavery Act Statement</a>
+					</div>
+					<div class="col-md-4 col-12">
+						<a>OFFICIAL LANGUAGES</a>
+						<h2 class="pt-3">CAREERS</h2>
+						<a>BOOK A FLIGHT</a>
+
+						<div class="social-media">
+							<span class="fa-stack" style="vertical-align: top;">
+								<i class="far fa-circle fa-stack-2x"></i>
+								<i class="fab fa-facebook-f fa-stack-1x"></i>
+							</span>
+							<span class="fa-stack" style="vertical-align: top;">
+								<i class="far fa-circle fa-stack-2x"></i>
+								<i class="fab fa-twitter fa-stack-1x"></i>
+							</span>
+							<span class="fa-stack" style="vertical-align: top;">
+								<i class="far fa-circle fa-stack-2x"></i>
+								<i class="fab fa-youtube fa-stack-1x"></i>
+							</span>
+							<span class="fa-stack" style="vertical-align: top;">
+								<i class="far fa-circle fa-stack-2x"></i>
+								<i class="fas fa-rss fa-stack-1x"></i>
+							</span>
+
+							<i class="ext-link-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<br>
+					 	<i class="ext-link-icon"></i> Indicates an external site which may not meet accessibility guidelines.
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<img src="img/skytrax-en.svg" class="skytrax">
+					</div>
+					<div class="pt-3 pt-md-0 col-md-4 col-12">
+						&copy; 2017 Air Canada
+						<a>General Conditions of Carriage & Tariffs</a>
+						<a>Privacy Policy</a>
+						<a>Term of use</a>
+					</div>
+					<div class="pt-3 pt-md-0 col-md-4 col-12">
+						<img src="img/star-alliance.svg" class="star-alliance"> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="feed-back"></a>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
